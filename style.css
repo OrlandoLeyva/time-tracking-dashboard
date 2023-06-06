@@ -44,6 +44,9 @@ main {
     padding: 2rem;
 }
 
+.capitalize {text-transform: capitalize;}
+.selected {color: white;}
+
 
 .main-card {
     display: flex;
@@ -100,11 +103,41 @@ main {
     gap: 2rem;
 }
 
-.work-card .card-header {
-    background-color: var(--Light-red-work);
+.card-header {
     display: flex;
     justify-content: end;
 }
+
+.work-card  .card-header  {
+    background-color: var(--Light-red-work);
+}
+
+.play-card  .card-header  {
+    background-color: var(--Soft-blue);
+}
+
+.study-card  .card-header  {
+    background-color: var(--Light-red);
+}
+
+.exercise-card  .card-header  {
+    background-color: var(--Lime-green);
+}
+
+.social-card  .card-header  {
+    background-color: var(--Violet);
+}
+
+.self-care-card  .card-header  {
+    background-color: var(--Soft-orange);
+}
+
+.info-cards {
+    display: grid;
+    gap: 2rem;
+}
+
+.card-header {height: 80px;}
 
 .card-info {
     background-color: var(--Dark-blue);
