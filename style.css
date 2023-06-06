@@ -1,0 +1,138 @@
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%); /*(work)*/
+    --Soft-blue: hsl(195, 74%, 62%); /*((lay)*/
+    --Light-red: hsl(348, 100%, 68%); /*(study)*/
+    --Lime-green: hsl(145, 58%, 55%); /*(exercise)*/
+    --Violet: hsl(264, 64%, 52%); /*(social)*/
+    --Soft-orange: hsl(43, 84%, 65%); /*(self care)*/
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    --fw-light: 300;
+    --fw-standard: 400;
+    --fw-regular: 500
+}
+
+/* WE RESET CERTAIN DEFAULT BROWSER STYLES TO HAVE THE SAME START POINT IN ANY BROWSER AND PREVENT INCONSISTENCIES */
+body, html {
+    padding:0;
+    margin: 0
+}
+
+body {
+    font-size: 1.125rem;
+    background-color: var(--Very-dark-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--Desaturated-blue);
+    padding: 3rem;
+    border-radius: 15px;
+    position: relative;
+    bottom: -10px;
+}
+
+.profile-image {
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.user p {
+    color: var(--Pale-Blue);
+}
+
+.username {
+    font-size: 2.5rem;
+    font-weight: var(--fw-light);
+    color: white;
+}
+
+.main-card-items {
+    background-color: var(--Dark-blue);
+    color: var(--Desaturated-blue);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    font-weight: var(--fw-regular);
+}
+
+.main-card-item {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--Dark-blue);
+}
+
+.cards-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.work-card .card-header {
+    background-color: var(--Light-red-work);
+    display: flex;
+    justify-content: end;
+}
+
+.card-info {
+    background-color: var(--Dark-blue);
+    position: relative;
+    top: -35px;
+    padding: 1rem;
+    display: grid;
+    gap: .5rem;
+    border-radius: 15px;
+}
+
+.card-top,
+.card-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top p,
+.card-time h2 {
+    color: white;
+    font-weight: var(--fw-regular);
+}
+
+.card-time h2 {
+    font-size: 2rem;
+}
+
+.card-time p {
+    color: var(--Pale-Blue);
+}
