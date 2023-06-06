@@ -26,6 +26,7 @@ body, html {
 body {
     font-size: 1.125rem;
     background-color: var(--Very-dark-blue);
+    min-height: 100vh;
 }
 
 h1,
@@ -42,11 +43,18 @@ img {
 
 main {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .capitalize {text-transform: capitalize;}
 .selected {color: white;}
 
+.cards-container {
+    display: grid;
+    gap: 2rem;
+    max-width: 600px;
+}
 
 .main-card {
     display: flex;
@@ -55,6 +63,7 @@ main {
 
 .user {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
     background-color: var(--Desaturated-blue);
@@ -88,6 +97,10 @@ main {
     font-weight: var(--fw-regular);
 }
 
+.main-card-item:hover
+{
+    color: var(--Pale-Blue);
+}
 .main-card-item {
     cursor: pointer;
 }
@@ -98,10 +111,6 @@ main {
     background-color: var(--Dark-blue);
 }
 
-.cards-container {
-    display: grid;
-    gap: 2rem;
-}
 
 .card-header {
     display: flex;
@@ -168,4 +177,56 @@ main {
 
 .card-time p {
     color: var(--Pale-Blue);
+}
+
+@media(min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: unset;
+        padding: unset;
+        height: auto;
+        width: 90%;
+    }
+    .cards-container {
+        max-width: 1200px;
+        grid-template-columns: 300px 1fr;
+        align-items: stretch;
+    }
+
+    .info-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* .main-card {
+        border-radius: 15px;
+    } */
+
+    .main-card-items {
+        border-radius: 15px;
+    }
+
+    .user,
+    .main-card-items,
+    .card-time {
+        flex-direction: column;
+    }
+
+    .card-time {
+        align-items: start;
+    }
+
+    .card-time h2 {
+        font-size: 2.5rem;
+    }
+
+    .user {
+        align-items: center;
+    }
+
+    .main-card-items {gap: 1rem}
 }
