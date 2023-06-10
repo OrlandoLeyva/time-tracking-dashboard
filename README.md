@@ -28,4 +28,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://orlando-leyva-portfolio.netlify.app/)
+- Website - [Orlando Leyva](https://orlando-leyva-portfolio.netlify.app/)
