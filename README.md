@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://time-tracking-dashboard-orlando.netlify.app/)
+- Live Site URL: [Time tracking dashboard](https://time-tracking-dashboard-orlando.netlify.app/)
 
 ## My process
 
